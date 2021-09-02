@@ -365,7 +365,9 @@ body {
     width: 100%;
   }
 
-
+#ikona {
+  transform: scale(0.6);
+}
 
 
   }
