@@ -15,3 +15,10 @@ nav.addEventListener('click', function(){
 
 
 })
+
+
+AOS.init({
+  delay: 250,
+  duration: 600,
+
+});
