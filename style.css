@@ -20,8 +20,9 @@ body {
 
 
 .papir {
-    height: 1500px;
-    background-color: rgb(254, 255, 189);
+    height: 2300px;
+    background: linear-gradient(rgb(231, 234, 245), rgb(205, 195, 248));
+
     top: 350px;
     left: 0;
     position: fixed;
@@ -208,9 +209,59 @@ body {
 
 /*--KARTEEEEEEEEEEEEEEEE-------------------------------*/
 
+.card {
+  margin-left: 40px;
+  background-color: rgb(51, 49, 49);
+  border-radius: 180px;
+  box-shadow: 10px 10px 5px grey;
+  margin-top: 120px;
+}
+
+.card-body  {
+  background-color: rgb(51, 49, 49);
+  color: white;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+
+}
 
 
 
+#slika {
+  width: 90%;
+  background-color: rgb(51, 49, 49);
+  position: relative;
+  top: -15px;
+  left: 15px;
+  height: 240px;
+  margin-bottom: 0;
+  border-radius: 10px;
+}
+
+.slika2{
+  background-color: rgb(51, 49, 49);
+  height: 70%;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+
+}
+
+.karte {
+  position: relative;
+  top: 1040px;
+  align-self: center;
+  justify-content: center;
+
+}
+
+.karte2 {
+  position: relative;
+  top: 1200px;
+}
+
+#kartemob {
+  display: none;
+}
 
 /*--------------------------KRAJ KARATAAA----------------------------*/
 
@@ -257,14 +308,18 @@ body {
 
 @media only screen and (max-width: 600px) {
 
+  body {
+    overflow-x: unset;
+  }
+  
     
     
     .papir {
     clip-path: polygon(50% 40%, 100% 45%, 100% 100%, 0 100%, 0 45%);
-    top: 0px;
-    z-index: 999;
-            background-color: rgb(255, 239, 214);
-
+    height: 4900px;
+    top: -1460px;
+    z-index: 2;
+    background: linear-gradient(rgb(231, 234, 245), rgb(205, 195, 248));
     }
 
     .animate__zoomInDown {
@@ -275,7 +330,7 @@ body {
     padding: 0;
     top: 290px;
     left: 20px;
-
+     
         
     }
 
@@ -284,6 +339,7 @@ body {
         width: 100%;
         filter: drop-shadow(30px 10px 4px #4444dd);
         height: 100vh;
+        position: fixed;
     }
 
     .kutak {
@@ -367,7 +423,71 @@ body {
 
 #ikona {
   transform: scale(0.6);
+  
 }
 
 
+.karta {
+  top: 800px;
+  width: 80%;
+  left: 10.5%;
+}
+
+
+/*-----------------KARTA MOB---------------------*/
+
+.card {
+  margin-left: 40px;
+  background-color: rgb(51, 49, 49);
+  border-radius: 180px;
+  box-shadow: 10px 10px 5px grey;
+  margin-top: 120px;
+}
+
+.card-body  {
+  background-color: rgb(51, 49, 49);
+  color: white;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+
+}
+
+
+
+#slika {
+  width: 90%;
+  background-color: rgb(51, 49, 49);
+  position: relative;
+  top: -15px;
+  left: 15px;
+  height: 240px;
+  margin-bottom: 0;
+  border-radius: 10px;
+}
+
+.slika2{
+  background-color: rgb(51, 49, 49);
+  height: 70%;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+
+}
+
+#karte {
+  position: relative;
+  top: 1340px;
+  align-self: center;
+  justify-content: center;
+  display: none;
+
+}
+
+#karte2 {
+  display: none;
+}
+#kartemob {
+  display: block;
+  position: relative;
+  top: 2340px;
+}
   }
